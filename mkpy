@@ -1,0 +1,8 @@
+#!/usr/bin/bash
+
+touch $1
+chmod u+x $1
+
+echo -e '#!/usr/bin/env python3\n\n'> $1
+
+vim $1
