@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+#Pulls data from upstream master and syncs with local master
+
+git fetch upstream
+git checkout master
+git merge upstream/master
+git push
